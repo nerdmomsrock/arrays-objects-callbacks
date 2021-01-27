@@ -15,6 +15,12 @@
 */
 
 //Code here
+let me = {
+  name: "Ryan", 
+  age: 40
+
+};
+alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -24,19 +30,28 @@
 */
 
 //Code here
-
+let favoriteThings = {
+  band: "Metallica",
+  food: "Thai", 
+  person: "Josie",
+  book: "Jane Eyre",
+  movie: "Pitch Perfect", 
+  holiday: "Thanksgiving"
+};
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
 */
-
+favoriteThings.car = "Honda";
+favoriteThings.brand = "Xero Shoes";
 //Code here
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 //Code here
 
 ////////// PROBLEM 3 //////////
@@ -48,12 +63,18 @@
   Set the value of that key to 'chapstick'.
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
 */
+let item = "firstPocket";
+let backPack = {
 
+};
+backPack["item"] = "chapstick";
+backPack.color = "black";
 //Code here
 
 /*
   After you do the above, alert your entire backPack object.
 */
+alert(backPack);
 
 //Code here
 
@@ -62,7 +83,7 @@ You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console.
 */
-
+console.log(backPack)
 //Code here
 
 ////////// PROBLEM 4 //////////
