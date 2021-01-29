@@ -27,6 +27,11 @@
   Then invoke the callback function, passing in the first element in the array as it's argument.
 */
 
+function first (arr, cb) {
+  cb (arr[0])
+};
+first(names);
+
 // Code Here 
 
 // Do not edit the code below.
@@ -48,7 +53,10 @@ first(names, function(firstName){
 */
 
 //Code Here
-
+function last(arr, cb){
+  cb (arr[arr.length-1]);
+}
+last(names)
 // Do not edit the code below.
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);
@@ -66,7 +74,10 @@ last(names, function(lastName){
 */
 
 //Code Here
-
+function multiply(num1, num2, cb) {
+cb (num1 * num2)
+};
+multiply()
 // Do not edit the code below.
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
@@ -85,7 +96,15 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
+function contains(arr, name, cb){
 
+if (arr.includes(name)){
+  cb(true);
+}else {
+  cb (false);
+}}
+
+contains();
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
   if(result === true){
@@ -104,7 +123,12 @@ contains(names, 'Colt', function(result){
   Write a function called uniq that takes in an array and a callback function.
   Remove any duplicate values from the array, and invoke the callback with the modified array as an argument.
 */
-
+function uniq(arr, cb){
+let inputArray = []
+arr = arr.filter( function( item, index) {
+  cb (inputArray.indexOf(item) === index)
+})};
+uniq()
 //Code Here
 
 // Do not edit the code below.
