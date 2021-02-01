@@ -54,8 +54,9 @@ function looper (family) {
   for (var i = 0; i < family.length; i ++){
     
   }
+  alert(family);
 }
-  window.alert(looper);
+  
 //Code Here
 
 
@@ -74,7 +75,7 @@ function reversedLooper (letters) {
   for (var i = letters.length - 1; i >= 0; i --) {
 
   }
-}
+} alert(letters)
 //Code Here
 
 
@@ -94,7 +95,8 @@ function evenFinder (nums) {
   for (var i = 0; i<nums.length; i ++) {
     if (nums[i] % 2 === 0)
     evenNums.push(nums[i]);
-  }
+    
+  }return evenNums
 }
 //Code Here
 
@@ -116,7 +118,7 @@ function evenFinder (nums) {
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+/* var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 // Do not edit the code above.
 
 /*
@@ -124,11 +126,17 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   Have divider return an array with the first item in the array being the evens array (all the even values from numbersArray)
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
-function divider(numArr) {
-
+function divider(numbersArray) {
+let even = []
+let odd = []
 for(let [i] = 0; i < numbersArray.length; i ++){
-  if ()
-}
+  if (arr[i] % 2 ===0) {
+    even.push(numbersArray[i]);
+  } else {
+    odd.push(numbersArray[i]);
+  }
+}return even 
+return odd
 }
 
 //Code Here
@@ -154,8 +162,16 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
-
+function finder (arr) {
+  let randomNumber = getRandomArbitrary();
+  for (let i = 0; i < numbers.length; i ++) {
+    if(randomNumber === numbers[i]) {
+      return true;
+    }else {
+      return false;
+    }
+  }
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -330,7 +346,7 @@ var user1 = {
 
 //Code Here
 
-
+ */
 
 /*
   Now you have a very common data structure. 

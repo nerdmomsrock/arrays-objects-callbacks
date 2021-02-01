@@ -30,7 +30,7 @@
 function first (arr, cb) {
   cb (arr[0])
 };
-first(names);
+
 
 // Code Here 
 
@@ -56,7 +56,7 @@ first(names, function(firstName){
 function last(arr, cb){
   cb (arr[arr.length-1]);
 }
-last(names)
+
 // Do not edit the code below.
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);
@@ -164,7 +164,11 @@ each(names, function(item, indice){
 */
 
 // Code here
-
+function getUserById (user, id, cb) {
+  if(user === id) {
+    cb(user);
+  }
+}
 // Do not edit the code below.
 var users = [
   {
