@@ -117,7 +117,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // ////////// PROBLEM 6 //////////
 
 // // Do not edit the code below.
-// /* var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+  var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 // // Do not edit the code above.
 
 // /*
@@ -125,18 +125,18 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 //   Have divider return an array with the first item in the array being the evens array (all the even values from numbersArray)
 //   and the second item in the array being the odds array (all the odd values from numbersArray).
 // */
-// function divider(numbersArray) {
-// let even = []
-// let odd = []
-// for(let [i] = 0; i < numbersArray.length; i ++){
-//   if (arr[i] % 2 ===0) {
-//     even.push(numbersArray[i]);
-//   } else {
-//     odd.push(numbersArray[i]);
-//   }
-// }return even 
-// return odd
-// }
+ function divider() {
+ let even = []
+ let odd = []
+ for(let [i] = 0; i < numbersArray.length; i ++){
+   if (arr[i] % 2 ===0) {
+     even.push(numbersArray[i]);
+   } else {
+     odd.push(numbersArray[i]);
+   }return even + odd
+ }divider(nnumbersArray)
+ 
+ }
 
 // //Code Here
 
@@ -145,9 +145,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // ////////// PROBLEM 7 //////////
 
 // // Do not edit the code below.
-// var getRandomArbitrary = function() {
-//   return Math.floor(Math.random() * 30);
-// };
+ var getRandomArbitrary = function() {
+ return Math.floor(Math.random() * 30);
+ };
 // // Do not edit the code above.
 
 // /* 
@@ -161,21 +161,21 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // */
 
 // //Code Here
-// function finder (arr) {
-//   let randomNumber = getRandomArbitrary();
-//   for (let i = 0; i < numbers.length; i ++) {
-//     if(randomNumber === numbers[i]) {
-//       return true;
-//     }else {
-//       return false;
-//     }
-//   }
-// }
+ function finder (arr) {
+   let randomNumber = getRandomArbitrary();
+   for (let i = 0; i < arr.length; i ++) {
+     if(arr[i] === randomNumber[i]) {
+       return true;
+    }else {
+       return false;
+    }
+   }
+ } 
 
 // ////////// PROBLEM 8 //////////
 
 // // Do not edit the code below.
-// var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
+ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 // // Do not edit the code above.
 
 // /*
@@ -198,9 +198,16 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // */
 
 // //Code Here
-// function removeItem (myGroceryList, item) {
-  
-// }
+ function removeItem (myGroceryList, item) {
+  for(let i = 0; i < myGroceryList.length; i ++){
+  updated = myGroceryList[i];
+  myGroceryList[i]['seconds'] --;
+  if (myGroceryList.seconds < 0) {
+    myGroceryList.splice(i, 1);
+    i --;
+  }
+ }
+}
 
 
 // ////////// PROBLEM 9 //////////

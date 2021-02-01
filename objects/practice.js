@@ -15,11 +15,11 @@
 // */
 
 // //Code here
-// let me = {
-//   name: "Ryan", 
-//   age: 40
+ let me = {
+   name: "Ryan", 
+   age: 40
 
-// };
+ };
 // alert(me.name);
 
 // ////////// PROBLEM 2 //////////
