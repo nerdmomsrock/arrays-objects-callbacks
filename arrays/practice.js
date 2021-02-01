@@ -199,7 +199,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function removeItem (myGroceryList, item) {
+  
+}
 
 
 ////////// PROBLEM 9 //////////
