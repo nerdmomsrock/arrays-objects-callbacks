@@ -217,13 +217,18 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // */
 
 // //Code Here
-
+function maker () {
+  let arr = []
+  for (var i = 1; i <= 215; i ++) {
+    arr.push(i)
+  } return arr
+}
 
 
 // ////////// PROBLEM 10 //////////
 
 // // Do not edit the code below.
-// var numbers = [5, '9', 16, 19, '25', '34', 48];
+ var numbers = [5, '9', 16, 19, '25', '34', 48];
 // // Do not edit the code above.
 
 // /*
@@ -233,22 +238,26 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // */
   
 // //Code Here
-
+function addTen(numbers) {
+  for (let i = 0; i < numbers.length; i ++) {
+    console.log(numbers[i] + 10)
+  }
+}
 
 
 // ////////// PROBLEM 11 //////////
 
 // // Do not edit the code below.
-// var num1 = Math.floor(Math.random() * 30);
-// var num2 = Math.floor(Math.random() * 30);
-// var arr1 = [];
-// var arr2 = [];
-// for(var i = 0; i < num1; i++){
-//   arr1.push(i);
-// }
-// for(var i = 0; i < num2; i++){
-//   arr2.push(i);
-// }
+ var num1 = Math.floor(Math.random() * 30);
+ var num2 = Math.floor(Math.random() * 30);
+ var arr1 = [];
+ var arr2 = [];
+ for(var i = 0; i < num1; i++){
+   arr1.push(i);
+ }
+ for(var i = 0; i < num2; i++){
+   arr2.push(i);
+ }
 // // Do not edit the code above.
 
 // /*
@@ -258,7 +267,13 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // */
 
 // //Code Here
-
+function longer(arr1, arr2) {
+  if (arr1.length > arr2.length){
+    console.log(arr1);
+  }else {
+    console.log(arr2);
+  }
+}longer()
 
 
 // /*
