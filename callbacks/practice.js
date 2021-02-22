@@ -125,7 +125,7 @@
 // */
  function uniq(arr, cb){
  for (let i = 0; i < arr.length; i ++){
-   for (let j = i + 1; j < arr.length; J ++) {
+   for (let j = i + 1; j < arr.length; j ++) {
      if(arr[j] === arr[i]){
        arr.splice(j, 1)
      }
@@ -152,7 +152,7 @@
 // //Code Here 
 function each (names, cb) {
 for (let i = 0; i < names.length; i ++) {
-  cb(names, names[names])
+  cb(names, names[i])
   }
 }
 // // Do not edit the code below.
@@ -172,9 +172,11 @@ for (let i = 0; i < names.length; i ++) {
 
 // // Code here
  function getUserById (users, id, cb) {
-   if(users.id === users.id) {
-     cb(users);
+   for (let i = 0; i < users.length; i ++){
+   if(users[i].id === users[i].id) {
+     cb(users[i]);
    }
+  }
  }
 // // Do not edit the code below.
  var users = [
